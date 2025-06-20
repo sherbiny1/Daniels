@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--second-font);
+}
+:root {
+  --head-font: "Montserrat", sans-serif;
+  --second-font: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--head-font);
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.544);
+  padding: 20px;
+}
+.navbar .collapse .navbar-nav .nav-item a {
+  color: #bcbcbc;
+}
+.navbar .collapse .navbar-nav .nav-item a:hover {
+  color: rgb(255, 255, 255);
+}
+.navbar .collapse .navbar-nav .nav-item a.active {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  position: relative;
+}
+.navbar .collapse .navbar-nav .nav-item a.active::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+  padding: 0;
+}
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0% 100%),
+    url(../img/imgs/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header h5 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.header-text-typed {
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 72px;
+}
+.header-text-typed span {
+  font-weight: 400;
+}
+header li {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #0000004d;
+}
+.content-about h3 {
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(52, 52, 52);
+}
+.content-about .title-about {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgb(153, 153, 153);
+}
+.content-about p {
+  font-size: 15px;
+  color: rgb(116, 129, 130);
+}
+.content-about p span {
+  font-size: 15px;
+  font-weight: 700;
+}
+.progress-infos {
+  height: 30px;
+}
+.title-section {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+}
+.services-item div,
+.contact-info div {
+  width: 65px;
+  height: 65px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  transition: background-color 0.5s, color 0.5s;
+}
+.services-item:hover div,
+.contact-info:hover div {
+  background-color: #1c1c1c;
+  color: white;
+}
+.services-item h5 {
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(52, 52, 52);
+}
+.services-item p {
+  font-size: 14px;
+  color: rgb(116, 129, 130);
+}
+#Services {
+  background-color: #f7f7f7;
+}
+
+.stats-item i,
+.stats-item h3 {
+  font-size: 30px;
+  color: rgb(52, 52, 52);
+}
+.stats-item h3 {
+  font-weight: 800;
+}
+.stats-item p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(116, 129, 130);
+}
+
+.contact-info h6 {
+  font-weight: 700;
+  color: rgb(52, 52, 52);
+}
+.contact-info p {
+  font-size: 15px;
+  color: rgb(116, 129, 130);
+}
+.form-info input,
+.form-info textarea {
+  color: rgb(52, 52, 52);
+  font-size: 14px;
+  background-color: #f4f4f4;
+  box-shadow: none;
+}
+.form-info textarea {
+  height: 200px;
+  max-height: 200px;
+  resize: vertical;
+}
+.form-control:focus {
+  border: none;
+  background-color: #f4f4f4;
+  box-shadow: none;
+}
+#Contact .button-item button {
+  font-size: 15px;
+}
+#footer {
+  background-color: #1c1c1c;
+}
+.footer-content div {
+  text-align: center;
+  color: rgb(116, 129, 130);
+  font-size: 13px;
+  word-spacing: 2px;
+}
+#Clients {
+  background-color: #f7f7f7;
+}
+#Clients .client-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+}
+.client-item p {
+  font-size: 15px;
+  color: rgb(116, 129, 130);
+}
+.client-item h6 {
+  font-weight: 600;
+  color: rgb(52, 52, 52);
+}
+.client-item span {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(136, 136, 136);
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-inline: 5px;
+  background-color: #869791;
+}
+#Team {
+  margin-top: 10px;
+  background-color: #f7f7f7;
+}
+.w-85 {
+  width: 85%;
+}
+.team-content .layer {
+  background-color: rgba(255, 255, 255, 0.9);
+  inset: 5px;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.7s, scale 0.7s, visibility 0.7s, opacity 0.7s;
+  transform: rotateY(180deg);
+  visibility: hidden;
+  opacity: 0;
+  scale: 0;
+}
+.team-content .layer div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  transition: background-color 0.1s, color 0.1s;
+}
+.team-content .layer div:hover {
+  background-color: white;
+  color: black;
+}
+.content-img img {
+  transition: transform 0.5s;
+}
+.team-content .content-img:hover img {
+  transform: scale(1.2);
+}
+.card-content:hover .layer {
+  transform: rotateY(0deg);
+  scale: 1;
+  visibility: visible;
+  opacity: 1;
+}
+.layer-work{
+  position: absolute;
+  inset: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .5s , opacity .5s;
+  
+}
+.work-sec:hover .layer-work{
+  visibility: visible;  
+  opacity: 1;
+
+}
+.layer-work h6{
+  font-size: 12px;
+  margin-block: 15px;
+  letter-spacing: 4px;
+}
+.icons-work i{
+  padding: 8px;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+
+  border: 1px solid;
+}
+.icons-work i:hover{
+  color: black;
+  background-color: white;
+  border: 1px solid;
+}
+
+#Works .nav-link{
+  color: black;
+}
